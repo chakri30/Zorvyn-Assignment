@@ -7,7 +7,7 @@ const {
   getRecordById,
   updateRecord,
   deleteRecord
-} = require('../controllers/recordController');
+} = require('../controllers/recordcontroller');
 
 const router = express.Router();
 
