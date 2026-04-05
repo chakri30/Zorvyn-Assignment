@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const { generalLimiter } = require('./src/middleware/rateLimiter');
+const { generalLimiter, authLimiter } = require('./src/middleware/rateLimiter');
 app.use(generalLimiter);
 app.use('/api/auth', authLimiter, require('./src/routes/authRoutes'));
 
